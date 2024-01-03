@@ -13,37 +13,42 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "FracAtlas"
+PROJECT_NAME_FULL: str = "FracAtlas: A Dataset for Fracture Classification, Localization and Segmentation of Musculoskeletal Radiographs"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.CC_BY_4_0()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical()]
+CATEGORY: Category = Category.Medical()
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
+ANNOTATION_TYPES: List[AnnotationType] = [
+    AnnotationType.SemanticSegmentation(),
+    AnnotationType.ObjectDetection(),
+]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2023-11-25"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://figshare.com/articles/dataset/The_dataset/22363012"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 11982926
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/frac-atlas"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[
+    Union[str, dict]
+] = "https://figshare.com/ndownloader/files/43283628"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -51,19 +56,36 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[
+    Union[str, List[str], Dict[str, str]]
+] = "https://www.nature.com/articles/s41597-023-02432-4"
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"some_link_to_repo_if_exists"}
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = "https://github.com/XLR8-07/FracAtlas"
 
 CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
-AUTHORS_CONTACTS: Optional[List[str]] = None
+AUTHORS: Optional[List[str]] = [
+    "Iftekharul Abedeen",
+    "Md. Ashiqur Rahman",
+    "Fatema Zohra Prottyasha",
+    "Tasnim Ahmed",
+    "Tareque Mohmud Chowdhury",
+    "Swakkhar Shatabda",
+]
+AUTHORS_CONTACTS: Optional[List[str]] = ["iftekharul@cse.uiu.ac.bd", "tasnimahmed@iut-dhaka.edu"]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "Islamic University of Technology, Gazipur, Bangladesh",
+    "United International University, Dhaka, Bangladesh",
+]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
+    "https://www.iutoic-dhaka.edu/",
+    "https://www.uiu.ac.bd/",
+]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "__PRETEXT__": "Additionally, the images have tags, representing whether a scan has ***hand***, ***leg***, ***hip*** or ***shoulder*** region present in it. Images also has a ***hardware*** tag corresponding to the availability of Orthopedic Fixation Devices in the scan. Some images have multiple views of the same organ projected from the frontal and sagittal planes. Those images can be identified using the ***multiscan*** tag. The ***fractured*** tag represents if a scan has fractures in it. The ***fracture_count*** tag representing the number of fracture instances present in image. The ***frontal***, ***lateral*** and ***oblique*** tags represent the perspectives present in image"
+}
 TAGS: Optional[List[str]] = None
 
 

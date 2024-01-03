@@ -1,5 +1,7 @@
+## Motivation
 
-Sample image template:
-<img src="https://github.com/dataset-ninja/gland-segmentation/assets/78355358/f158d0dd-71d5-41a2-aba5-4a5f57d54c35" alt="image" width="800">
+Digital radiography is one of the most common and cost-effective standards for the diagnosis of bone fractures. For such diagnoses expert intervention is required which is time-consuming and demands rigorous training. With the recent growth of computer vision algorithms, there is a surge of interest in computer-aided diagnosis. The development of algorithms demands large datasets with proper annotations. Existing X-Ray datasets are either small or lack proper annotation, which hinders the development of machine-learning algorithms and evaluation of the relative performance of algorithms for classification, localization, and segmentation.
 
-<span style="font-size: smaller; font-style: italic;">Image description.</span>
+## Dataset description
+
+The authors present **FracAtlas: A Dataset for Fracture Classification, Localization and Segmentation of Musculoskeletal Radiographs**, a dataset of X-Ray scans curated from the images collected from 3 major hospitals in Bangladesh. Their dataset includes 4,083 images of arms, legs, hips and shoulders, that have been manually annotated for bone fracture classification, localization, and segmentation with the help of 2 expert radiologists and an orthopedist. There are 717 images with 922 instances of fractures. Each of the fracture instances has its own mask and bounding box, whereas the scans also have global labels for classification tasks. The _fractured_ images were randomly split into 80% (574) training, 12% (82) validation and 8% (61) test images. _Not fractured_ dataset contains all the healthy 3366 bone images.
