@@ -4,12 +4,12 @@ The authors present **FracAtlas: A Dataset for Fracture Classification, Localiza
 ## Dataset creation
 
 The authors have created the FracAtlas dataset in four main steps: 
-1) data collection - general purpose X-ray images were collected in DICOM format and for de-identification, the images were converted to JPG and were given arbitrary names,
-2) data cleaning - the resultant JPG image set was filtered out from other body parts,
-3) finding the general distribution of cleaned data - the resulting image set was taken back to the respective hospitals to find out the general distribution,
-4) annotation of the dataset - the resulting image set was annotated by 2 expert radiologists and later verified and merged by an expert orthopedic doctor.
+***1) Data Collection*** - general purpose X-ray images were collected in DICOM format and for de-identification, the images were converted to JPG and were given arbitrary names,
+***2) Data Cleaning*** - the resultant JPG image set was filtered out from other body parts,
+***3) Finding the general distribution of cleaned data*** - the resulting image set was taken back to the respective hospitals to find out the general distribution,
+***4) Annotation of the dataset*** - the resulting image set was annotated by 2 expert radiologists and later verified and merged by an expert orthopedic doctor.
 
-<img src="https://github.com/dataset-ninja/frac-atlas/assets/120389559/bfbca4a0-d7e7-4f8a-ae89-840ac01e98b2" alt="image" width="800">
+<img src="https://github.com/dataset-ninja/frac-atlas/assets/120389559/bfbca4a0-d7e7-4f8a-ae89-840ac01e98b2" alt="image" width="1000">
 
 <span style="font-size: smaller; font-style: italic;">The workflow for creating the FracAtlas dataset.</span>
 
@@ -17,15 +17,15 @@ Throughout the years 2021 and 2022, approximately 14,068 X-ray scans were collec
 
 ## Dataset distribution
 
-There are 717 abnormal scans in dataset which contain a total of 922 instances of fractures. The abnormal studies contain at least 1 and at most 5 fracture instances in them. Some of the scans have multiple views and locales in them. There are 396 images with different views of the same organ in the same image. There are 99 images with Orthopedic Fixation Devices (hardware) in them. The FracAtlas dataset19 has a total of 1,538 scans of the hand and among them, 437 are fractured. There is a total of 2,272 leg scans, 338 hip scans and 349 shoulder scans. Among these, the number of scans belonging fractured class is 263, 63 and 63 for the leg, hip and shoulder regions respectively, marked with ***hand***, ***leg***, ***hip***, ***shoulder*** and ***fractured*** tags respectively.
+There are 717 abnormal scans in dataset which contain a total of 922 instances of fractures. The abnormal studies contain at least 1 and at most 5 fracture instances in them. Some of the scans have multiple views and locales in them. There are 396 images with different views of the same organ in the same image. There are 99 images with Orthopedic Fixation Devices (hardware) in them. The FracAtlas dataset19 has a total of 1,538 scans of the hand and among them, 437 are fractured. There is a total of 2,272 leg scans, 338 hip scans and 349 shoulder scans. Among these, the number of scans belonging fractured class is 263, 63 and 63 for the leg, hip and shoulder regions respectively, marked with ***hand***, ***fractured***, ***leg***, ***hip***, ***shoulder*** tags.
 
-<img src="https://github.com/dataset-ninja/frac-atlas/assets/120389559/3661dda3-712a-4bc4-a812-adf09fa0a7a7" alt="image" width="800">
+<img src="https://github.com/dataset-ninja/frac-atlas/assets/120389559/3661dda3-712a-4bc4-a812-adf09fa0a7a7" alt="image" width="1000">
 
 <span style="font-size: smaller; font-style: italic;">The distribution of different locales along with other properties present in the images of the FracAtlas dataset.</span>
 
-The FracAtlas dataset comprises a total of 2,503 frontal, 1,492 lateral, and 418 oblique view images, each pertaining to different organs, they marked with ***frontal***, ***lateral*** and ***oblique*** tags respectively. Whereas the ‘Fractured’ class includes 438 frontal, 325 lateral, and 45 oblique view images. Conversely, the ‘Non-fractured’ class encompasses a total of 2,065 frontal, 1,167 lateral, and 373 oblique views.
+The FracAtlas dataset comprises a total of 2,503 frontal, 1,492 lateral, and 418 oblique view images, each pertaining to different organs, they marked with ***frontal***, ***lateral*** and ***oblique*** tags respectively.
 
-<img src="https://github.com/dataset-ninja/frac-atlas/assets/120389559/9c8ee5aa-2216-4dc1-a1a3-131d706b0dfb" alt="image" width="800">
+<img src="https://github.com/dataset-ninja/frac-atlas/assets/120389559/9c8ee5aa-2216-4dc1-a1a3-131d706b0dfb" alt="image" width="1000">
 
 <span style="font-size: smaller; font-style: italic;">The number of samples present for each of the frontal, lateral and oblique views present in the FracAtlas dataset for individual classes.</span>
 
