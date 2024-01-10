@@ -84,7 +84,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Additionally, the images have tags, representing whether a scan has ***hand***, ***leg***, ***hip*** or ***shoulder*** region present in it. Images also has a ***hardware*** tag corresponding to the availability of Orthopedic Fixation Devices in the scan. Some images have multiple views of the same organ projected from the frontal and sagittal planes. Those images can be identified using the ***multiscan*** tag. The ***fractured*** tag represents if a scan has fractures in it. The ***fracture_count*** tag representing the number of fracture instances present in image. The ***frontal***, ***lateral*** and ***oblique*** tags represent the perspectives present in image"
+    "__PRETEXT__": "Additionally, images also has a ***hardware*** tag corresponding to the availability of Orthopedic Fixation Devices in the scan. Some images have multiple views of the same organ projected from the frontal and sagittal planes, those images can be identified using the ***multiscan*** tag. Images, containing multiple body parts, are marked by ***mixed*** tag"
 }
 TAGS: Optional[List[str]] = None
 
