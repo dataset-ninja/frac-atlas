@@ -24,7 +24,11 @@ LICENSE: License = License.CC_BY_4_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical()]
 CATEGORY: Category = Category.Medical()
 
-CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
+CV_TASKS: List[CVTask] = [
+    CVTask.SemanticSegmentation(),
+    CVTask.ObjectDetection(),
+    CVTask.Classification(),
+]
 ANNOTATION_TYPES: List[AnnotationType] = [
     AnnotationType.SemanticSegmentation(),
     AnnotationType.ObjectDetection(),

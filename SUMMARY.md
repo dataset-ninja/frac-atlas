@@ -1,4 +1,4 @@
-**FracAtlas: A Dataset for Fracture Classification, Localization and Segmentation of Musculoskeletal Radiographs** is a dataset for semantic segmentation and object detection tasks. It is used in the medical industry. 
+**FracAtlas: A Dataset for Fracture Classification, Localization and Segmentation of Musculoskeletal Radiographs** is a dataset for semantic segmentation, object detection, and classification tasks. It is used in the medical industry. 
 
 The dataset consists of 4083 images with 1844 labeled objects belonging to 1 single class (*fractured*).
 
