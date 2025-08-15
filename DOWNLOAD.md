@@ -1,6 +1,6 @@
 Dataset **FracAtlas** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzMyNzJfRnJhY0F0bGFzL2ZyYWNhdGxhcy1EYXRhc2V0TmluamEudGFyIiwgInNpZyI6ICJNQzRVSzlvRlJIQmpXTElaSlNjQXU4cUFlSkhYS1gzL2pBWHVCZUpkVllnPSJ9)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogInMzOi8vc3VwZXJ2aXNlbHktZGF0YXNldHMvMzI3Ml9GcmFjQXRsYXMvZnJhY2F0bGFzLURhdGFzZXROaW5qYS50YXIiLCAic2lnIjogIjRlcnhra1FDZ28xNzVQbzJodUhVK1J3bE5zMStsT1lIbDBJWk1NbkdGOWM9In0=?response-content-disposition=attachment%3B%20filename%3D%22fracatlas-DatasetNinja.tar%22)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
